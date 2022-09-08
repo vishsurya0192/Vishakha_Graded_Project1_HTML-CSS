@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(78,75,75);
+    margin-bottom: 0%;
+    padding: 0%;
+}
+header h1 {
+    margin-right: 5%;
+    font-size: 40px;
+}
+
+footer {
+    position: relative;
+    bottom: 0%;
+    margin: 0%;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    background-color: black;
+}
+
+footer p {
+    padding: 20px;
+    margin: 0%;
+}
+
+.navigationbar {
+    position: sticky;
+    background-color: gray;
+    z-index: 1;
+
+}
+
+.menu {
+    margin: 0%;
+    padding: 5px;
+}
+
+.menu li {
+    display : inline-block;
+    padding: 0%;
+}
+
+.menu li a {
+    margin: 0%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.menu>li>a:hover {
+    background-color: rgb(78,75,75);
+}
+
+.menu>li:first-child {
+    margin-left: 10%;
+}
+
+.menu li:nth-child(2):hover #drop {
+    display: block;
+}
+
+.menu li:nth-child(3) :hover #drop {
+    display: block;
+}
+
+.menu > li:hover .drop {
+    display: block;
+}
+
+.drop li {
+    padding: 5px;
+    display: block;
+    background-color: whitesmoke;
+}
+
+.drop li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.drop li:hover {
+    background-color: gray;
+}
+
+.drop li:hover a {
+    color: white;
+}
+
+.drop {
+    text-align: center;
+    padding: 0%;
+    top: 27px;
+    position: absolute;
+    width: auto;
+    display: none;
+    max-width: 150px;
+
+}
+
+#offers {
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+#offers p {
+    border: solid steelblue 3px;
+    margin-left: 5%;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    width: 60%;
+    height: 300px;
+    background-repeat: no-repeat;
+    animation-name: ads_ani;
+    animation-duration: 25s;
+}
+
+@keyframes ads_ani {
+    0% {
+        background-image: url('./Images/Animation/ani1.jpg');
+        width: 60%;
+    }
+    25% {
+        background-image: url('./Images/Animation/ani2.jpg');
+        width: 70%;
+    }
+    50% {
+        background-image: url('./Images/Animation/ani3.jpg');
+        width: 53%;
+    }
+    75% {
+        background-image: url('./Images/Animation/ani4.jpg');
+        width: 56%;
+    }
+    100% {
+        background-image: url('./Images/Animation/ani5.jpg');
+        width: 58%;
+    }
+
+}
+
+.product_section {
+    margin: 20px 0% 30px 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.product {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background-color: gray;
+}
+
+.product:hover {
+    padding: 20px;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+}
+
+.product button {
+    width: 100%;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    border-radius: 2px;
+}
+
+.product button:active {
+    background-color: rgb(250, 234, 230);
+    font-weight: bold;
+    color: rgb(0,255,76);
+    border: solid rgb(0,255,76);
+    border-radius: 2px;
+}
